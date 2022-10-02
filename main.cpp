@@ -4,8 +4,7 @@
 
 #include <iostream>
 #include "input.h"
-
-
+#include "vectorContain.h"
 using namespace std;
 
 int menuOption();
@@ -17,6 +16,10 @@ int main()
         switch (menuOption())
         {
         case 0: exit(1); break;
+        case 1: {
+            vectorContain v;
+            v.vectorMain();
+        }break;
         default: cout << "\n\tERROR - Invalid option. Please re-enter.\n"; break;
         }
     } while (true);
